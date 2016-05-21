@@ -1,0 +1,398 @@
+/* CSS RESET
+   http//meyerweb.com/eric/tools/css/reset/
+   v2.0b1 | 201101
+   NOTE WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background-color: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+input,
+textarea {
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after {
+  content: '';
+  content: none;
+}
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+/* remember to define visible focus styles!
+focus
+	outline ?????
+ */
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.form {
+  margin: auto;
+  width: 90%;
+}
+@media all and (min-width: 640px) {
+  .form {
+    width: 70%;
+  }
+}
+@media all and (min-width: 800px) {
+  .form {
+    width: 50%;
+  }
+}
+@media all and (min-width: 1200px) {
+  .form {
+    width: 40%;
+  }
+}
+.form__field {
+  margin-bottom: 1em;
+}
+.form__label {
+  display: none;
+}
+@media all and (min-width: 640px) {
+  .form__label {
+    display: block;
+    margin-bottom: 0.5em;
+    padding-left: 1em;
+  }
+}
+@media all and (min-width: 800px) {
+  .form__label {
+    text-align: left;
+    line-height: 2em;
+  }
+}
+@media all and (min-width: 1200px) {
+  .form__label {
+    float: left;
+    width: 18%;
+    padding-right: 2%;
+    padding-left: 0;
+    text-align: right;
+  }
+}
+.form__input,
+.form__message {
+  padding: 0 1em;
+  width: 100%;
+  font-size: 1.2em;
+}
+.form__input {
+  height: 2em;
+}
+@media all and (min-width: 1200px) {
+  .form__input {
+    width: 80%;
+  }
+}
+.form__message {
+  padding-top: 0.4em;
+  height: 4em;
+}
+@media all and (min-width: 1200px) {
+  .form__message {
+    width: 80%;
+    margin-left: 20%;
+  }
+}
+.form__submit {
+  height: 2em;
+  width: 100%;
+  font-weight: 900;
+  font-size: 1.3em;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  background-color: #17f;
+}
+@media all and (min-width: 1200px) {
+  .form__submit {
+    margin-left: 50%;
+    width: 50%;
+  }
+}
+.form__error {
+  margin-top: 0.5em;
+  padding-left: 1em;
+  color: #f22;
+}
+@media all and (min-width: 1200px) {
+  .form__error {
+    margin-left: 25%;
+  }
+}
+.form__link {
+  margin-top: 0.5em;
+  color: #22f;
+  text-decoration: underline;
+  text-align: center;
+}
+@media all and (min-width: 1200px) {
+  .form__link {
+    text-align: right;
+  }
+}
+.form__submit,
+.form__link {
+  cursor: pointer;
+}
+
+.header {
+  margin-bottom: 1em;
+  text-align: center;
+}
+.header__title {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.main {
+  margin-top: 2em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.messages {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 2em;
+}
+@media all and (min-width: 800px) {
+  .messages {
+    width: 70%;
+  }
+}
+@media all and (min-width: 640px) {
+  .messages {
+    width: 60%;
+  }
+}
+@media all and (min-width: 1200px) {
+  .messages {
+    width: 50%;
+  }
+}
+.messages__header {
+  margin-bottom: 1em;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-align: center;
+}
+.messages__item {
+  margin-bottom: 1em;
+  padding: 0.5em;
+  background-color: #ddd;
+}
+@media all and (min-width: 640px) {
+  .messages__item {
+    padding: 1em;
+  }
+}
+.messages__text {
+  clear: both;
+  margin-top: 2em;
+  padding: 0.5em;
+  text-align: justify;
+  background-color: #fff;
+}
+@media all and (min-width: 640px) {
+  .messages__text {
+    clear: none;
+    margin-top: 1em;
+    padding: 1em;
+  }
+}
+.messages__button {
+  width: 100px;
+  height: 2em;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  background-color: #17f;
+  cursor: pointer;
+}
+
+.response {
+  margin-left: 10%;
+}
+.response__message {
+  margin-bottom: 1em;
+}
+.response__button {
+  width: 100px;
+  height: 2em;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  background-color: #17f;
+  cursor: pointer;
+}
+
+.time {
+  text-align: right;
+  font-size: 0.8em;
+}
+@media all and (min-width: 640px) {
+  .time {
+    max-height: 2em;
+  }
+}
+
+@media all and (min-width: 640px) {
+  .user {
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+}
+.user__data {
+  float: left;
+  width: 60%;
+}
+.user__name {
+  font-size: 1.2em;
+  font-weight: 900;
+}
+@media all and (min-width: 640px) {
+  .user__name {
+    float: left;
+    padding-right: 2em;
+  }
+}
+.user__contacts {
+  margin-top: 0.5em;
+}
+@media all and (min-width: 640px) {
+  .user__contacts {
+    margin-top: 0;
+  }
+}
+.user__link {
+  font-size: 1.2em;
+  padding-right: 0.5em;
+  text-decoration: none;
+}
